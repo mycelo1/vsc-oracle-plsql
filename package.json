@@ -2,7 +2,7 @@
     "name": "oracle-plsql",
     "displayName": "oracle-plsql",
     "description": "Oracle PL/SQL syntax highlighting",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "publisher": "mycelo",
     "engines": {
         "vscode": "^1.5.0"

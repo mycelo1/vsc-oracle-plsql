@@ -10,9 +10,9 @@ All merits should go to its original author(s).
 
 ## Features
 
-This extension provides solely the syntax highlighting specifically for *Oracle*'s proprietary PL/SQL database programming code. It *does not* provide identifier navigation, code snippets, folding, templates, compiling or debug support. It also *does not* support interfacing with *SQL Plus* or database servers. Finally, other *Oracle Database* supported languages have not been implemented (e.g. *Java*).
+This extension provides syntax highlighting for *Oracle*'s proprietary PL/SQL database programming language. It *does not* provide identifier navigation, code snippets, folding, completion, templates, compiling or debug support.
 
-Most of *Oracle's PL/SQL* keywords are being recognized, including types, classes, declarations, exceptions, DDL, DML, and built-in functions and packages (UTL, DBMS, etc).
+Most of *Oracle's PL/SQL* keywords are being recognized, including types, classes, declarations, exceptions, DML, built-in functions and default packages.
 
 ---
 
@@ -58,3 +58,8 @@ Initial release.
 
 * Correctly recognizes *CREATE OR REPLACE* pattern
 * Added several missing types and reserved keywords
+
+### 1.0.3
+
+* Added a few missing keywords
+* Support for *PRAGMA* syntax
