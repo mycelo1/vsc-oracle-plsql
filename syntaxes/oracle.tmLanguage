@@ -190,7 +190,7 @@
       </dict>
       <dict>
         <key>match</key>
-        <string>(?i)\b(true|false|null)\b</string>
+        <string>(?i)\b(true|false|null|c_[-a-z0-9_]+)\b</string>
         <key>name</key>
         <string>constant.language.oracle</string>
       </dict>
