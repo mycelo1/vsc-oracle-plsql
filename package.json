@@ -37,8 +37,7 @@
     "grammars": [{
       "language": "oracle",
       "scopeName": "source.plsql.oracle",
-                "path": "./syntaxes/oracle.tmLanguage"
-            }
-        ]
+      "path": "./syntaxes/oracle.tmLanguage.json"
+    }]
   }
 }
