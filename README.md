@@ -2,9 +2,12 @@
 
 **Oracle PL/SQL syntax highlighting**
 
-This is a straight port from [Oracle PL/SQL TextMate bundle for Sublime Text 2/3](https://github.com/mulander/oracle.tmbundle) which has been released under *GPL-2.0* license.
+This is a fork of [mycelo's vsc extension](https://github.com/mycelo1/vsc-oracle-plsql) which is a straight port from [Oracle PL/SQL TextMate bundle for Sublime Text 2/3](https://github.com/mulander/oracle.tmbundle) which has been released under *GPL-2.0* license.
 
 All merits should go to its original author(s).
+
+
+All I did was change around some highlights and keywords.
 
 ---
 
@@ -34,32 +37,6 @@ Most of *Oracle's PL/SQL* keywords are being recognized, including types, classe
 
 ## Source
 
-[https://github.com/mycelo1/vsc-oracle-plsql](https://github.com/mycelo1/vsc-oracle-plsql)
-
+[https://github.com/Zsapi/vsc-oracle-plsql/](https://github.com/Zsapi/vsc-oracle-plsql/)
 ---
 
-## Bug Report
-
-[Create a bug report](https://github.com/mycelo1/vsc-oracle-plsql/issues)
-
----
-
-## Release Notes
-
-### 1.0.0
-
-Initial release.
-
-### 1.0.1
-
-* Clarified the file association instructions
-
-### 1.0.2
-
-* Correctly recognizes *CREATE OR REPLACE* pattern
-* Added several missing types and reserved keywords
-
-### 1.0.3
-
-* Added a few missing keywords
-* Support for *PRAGMA* syntax

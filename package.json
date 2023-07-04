@@ -1,22 +1,21 @@
 {
-    "name": "oracle-plsql",
-    "displayName": "oracle-plsql",
-    "description": "Oracle PL/SQL syntax highlighting",
-    "version": "1.0.3",
-    "publisher": "mycelo",
-    "engines": {
-        "vscode": "^1.5.0"
-    },
-    "homepage": "https://github.com/mycelo1/vsc-oracle-plsql",
+  "name": "oracle-plsql",
+  "displayName": "oracle-plsql",
+  "description": "Oracle PL/SQL syntax highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+    "homepage": "https://github.com/Zsapi/vsc-oracle-plsql",
     "repository": {
         "type": "git",
-        "url": "https://github.com/mycelo1/vsc-oracle-plsql"
+        "url": "https://github.com/Zsapi/vsc-oracle-plsql"
     },
     "icon": "images/oracle-plsql.png",
-    "categories": [
-        "Languages"
-    ],
-    "contributes": {
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
         "languages": [
             {
                 "id": "oracle",
@@ -29,17 +28,17 @@
                     ".ddl",
                     ".dml",
                     ".pks",
-                    ".pkb"
+                    ".pkb",
+                    ".pck",
+                    ".tst"
                 ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "oracle",
-                "scopeName": "source.plsql.oracle",
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "oracle",
+      "scopeName": "source.plsql.oracle",
                 "path": "./syntaxes/oracle.tmLanguage"
             }
         ]
-    }
+  }
 }
