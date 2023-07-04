@@ -91,7 +91,7 @@
           "name": "keyword.other.oracle"
         },
         "2": {
-          "name": "entity.name.type.oracle"
+          "name": "entity.name.function.oracle"
         }
       },
       "match": "(?i)\\b(function|procedure)\\s+([-a-z0-9_]+)",
@@ -128,12 +128,12 @@
       "name": "constant.numeric.oracle"
     },
     {
-      "match": "(?i)\\b(references|foreign|primary|key|check|constraint|if|elsif|else|end\\s+if|loop|while|end\\s+loop|for|case|end\\s+case|continue|return|goto|add|using)\\b",
+      "match": "(?i)\\b(references|foreign|primary|key|check|constraint|if|elsif|else|end\\s+if|loop|while|end\\s+loop|for|case|end\\s+case|continue|return|goto|add)\\b",
       "name": "keyword.control.oracle"
     },
     {
       "match": "(?i)\\b(or|and|not|like)\\b",
-      "name": "keyword.operator.oracle"
+      "name": "keyword.other.oracle"
     },
     {
       "match": "(?i)\\b(sysdate|%(isopen|found|notfound|rowcount)|commit|rollback|savepoint|sqlerrm|substr|cast|decode|length|lower|upper)\\b",
@@ -169,18 +169,30 @@
           "name": "keyword.other.oracle"
         },
         "2": {
-          "name": "entity.name.type.oracle"
+          "name": "entity.name.function.oracle"
         }
       },
       "match": "(?i)\\b(end)\\s+([-a-z0-9_]+)\\b",
       "name": "meta.procedure.oracle"
     },
     {
-      "match": "(?i)\\b(end|then|deterministic|exception|when|exists|others|subtype|constant|range|declare|begin|in|out|nocopy|to|is|as|exit|raise|cursor|record|open|fetch|into|close|%type|%rowtype|execute|comment|column|synonym|sequence|index\\s+by|start\\s+with|increment\\s+by|cache|grant|start|alter|database|datafile|autoextend|trigger|after|before|each|row|default|instantiable|final|force|pipe|pipelined|\\.(extend|count|first|last|next|nextval|currval|reverse))\\b",
-      "name": "keyword.other.oracle"
+      "captures": {
+        "1": {
+          "name": "entity.name.variable"
+        },
+        "3": {
+          "name": "support.function.oracle"
+        }
+      },
+      "match": "(?i)\\b(([-a-z0-9_.]+)\\.)?([-a-z0-9_]+)\\(",
+      "name": "meta.function-call.oracle"
     },
     {
-      "match": "(?i)\\b(select|from|inner\\s+join|left\\s+join|left\\s+outer\\s+join|right\\s+join|right\\s+outer|join|full\\s+join|full\\s+outer\\s+join|on|off|where|order\\s+by|group\\s+by|asc|desc|update|set|insert|into|values|returning|delete|from|distinct|union|having|limit|table|of|drop|between|index|tablespace)\\b",
+      "match": "(?i)\\b(end|then|deterministic|exception|when|exists|others|subtype|constant|range|declare|begin|in|out|nocopy|to|is|as|exit|raise|cursor|record|open|fetch|into|close|%type|%rowtype|execute|comment|column|synonym|sequence|index\\s+by|start\\s+with|increment\\s+by|cache|grant|start|alter|database|datafile|autoextend|trigger|after|before|each|row|default|instantiable|final|force|pipe|pipelined|\\.(extend|count|first|last|next|nextval|currval|reverse))\\b",
+      "name": "keyword.control.oracle"
+    },
+    {
+      "match": "(?i)\\b(select|from|inner\\s+join|left\\s+join|left\\s+outer\\s+join|right\\s+join|right\\s+outer|join|full\\s+join|full\\s+outer\\s+join|on|off|where|order\\s+by|group\\s+by|asc|desc|update|set|insert|into|values|returning|delete|from|distinct|union|having|limit|table|of|drop|between|index|tablespace|using)\\b",
       "name": "keyword.other.sql.oracle"
     },
     {
@@ -655,7 +667,7 @@
       "name": "string.quoted.double.oracle"
     },
     {
-      "match": "(?i)\\b(varchar2|nvarchar2|number|integer|float|long|date|binary_float|binary_double|timestamp|interval|raw|long\\s+raw|rowid|urowid|char|nchar|clob|nclob|blob|bfile|boolean|pls_integer|binary_integer|natural|naturaln|positive|positiven|signtype|simple_integer|smallint|object|anydata|anytype)\\b",
+      "match": "(?i)\\b(varchar2|nvarchar2|number|integer|float|long|date|binary_float|binary_double|timestamp|interval|raw|long\\s+raw|rowid|urowid|char|nchar|clob|nclob|blob|bfile|boolean|pls_integer|binary_integer|natural|naturaln|positive|positiven|signtype|simple_integer|smallint|object|anydata|anytype|sys_refcursor)\\b",
       "name": "storage.type.oracle"
     },
     {
